@@ -1,6 +1,6 @@
 ---
 title: "The making of the lollipop chart"
-author: "Add your name here"
+author: "Tyler Drangula"
 format: html
 editor: visual
 ---
@@ -41,3 +41,9 @@ mean_area_decade
 # Lollipop chart
 
 Recreate the lollipop chart from the slides.
+
+```{r}
+#| label: create-lollipop-chart
+ggplot(mean_area_decade, aes(x = mean_area, y = decade_built_cat)) + 
+geom_point()
+```
